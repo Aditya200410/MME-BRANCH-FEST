@@ -1,6 +1,6 @@
 import React from 'react';
 import pic2 from "../2.png"
-
+import { motion, AnimatePresence } from 'framer-motion';
 import pic4 from "../4.png"
 import pic5 from "../5.png"
 import { Button,Stack } from "@mui/material";
@@ -52,20 +52,9 @@ Ladies and gentlemen, Welcome to the electrifying realm of atoms, where particle
                     alignItems: "center",
                   }}
                 >
-  <Button
-                    variant="contained"
-                    href="/sign-up"
-                    sx={{
-                      padding: { xs: "4px 6px", md: "8px 10px" },
-                      background: "#00ced1",
-                      fontSize: { xs: "1rem", md: "14px" },
-                      textAlign: "center",
-                      border: ".125rem solid white",
-
-                    }}
-                  >
-                    Register Now
-                  </Button>
+ <motion.button className="getstarted" whileHover={{ scale: 1 }} >
+            <a href="https://forms.gle/ixFQBsAnhDuoBXDLA">REGISTER NOW</a>
+          </motion.button>
                   </Stack>
   </div>
   </>
