@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
 import Landing from "../components/Landing";
-
+import { motion, AnimatePresence } from 'framer-motion';
 
 
 function Home() {
@@ -155,22 +155,9 @@ Farewell is a bittersweet melody where the echoes of laughter and love remain, b
                     alignItems: "center",
                   }}
                 >
-                  <Button
-                    variant="contained"
-                    href="https://forms.gle/ixFQBsAnhDuoBXDLA"
-                    sx={{
-                      padding: { xs: "4px 6px", md: "8px 10px" },
-                      background: "#00ced1",
-                      fontSize: { xs: "1rem", md: "14px" },
-                      textAlign: "center",
-                      border: ".125rem solid white",
-                      width: { xs: "15rem", md: "14rem"},
-                      height: { xs: "5rem", md: "3rem"}
-                    }}
-                  >
-                    Register Now
-                  </Button>
-                  
+                 <motion.button className="getstarted" whileHover={{ scale: 1 }} >
+            <a href="https://forms.gle/ixFQBsAnhDuoBXDLA">REGISTER NOW</a>
+          </motion.button>
                 </Stack>
               </Stack>
             </Stack>
